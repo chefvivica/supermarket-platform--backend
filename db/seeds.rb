@@ -17,3 +17,8 @@ Owner.create(name: "kk", password:"123")
 Market.create(name: "Key Food", location: "11375", ownerId: 1)
 Market.create(name: "Key Food", location: "11355", ownerId: 1)
 
+Category.create(name: "Household")
+
+Item.create(name: "toilet paper", price: 10.99, measurement: "ea", inventory: 100, brand: "hope", marketId:1, categoryId:1)
+
+Image.create(itemsId:1, url: "https://mobilecontent.costco.com/live/resource/img/static-us-tiles/tissues-paper-towels.jpg")
