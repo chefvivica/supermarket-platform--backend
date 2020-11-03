@@ -12,3 +12,8 @@ Category.delete_all
 Image.delete_all
 Market.delete_all
 
+Owner.create(name: "kk", password:"123")
+
+Market.create(name: "Key Food", location: "11375", ownerId: 1)
+Market.create(name: "Key Food", location: "11355", ownerId: 1)
+
