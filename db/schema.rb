@@ -22,7 +22,8 @@ ActiveRecord::Schema.define(version: 2020_10_23_162953) do
   end
 
   create_table "images", force: :cascade do |t|
-    t.integer "itemsId"
+    t.integer "item_id"
+    t.string "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -33,8 +34,8 @@ ActiveRecord::Schema.define(version: 2020_10_23_162953) do
     t.string "measurement"
     t.integer "inventory"
     t.string "brand"
-    t.integer "marketId"
-    t.integer "categoryId"
+    t.integer "market_id"
+    t.integer "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -42,7 +43,7 @@ ActiveRecord::Schema.define(version: 2020_10_23_162953) do
   create_table "markets", force: :cascade do |t|
     t.string "name"
     t.string "location"
-    t.integer "ownerId"
+    t.integer "owner_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
