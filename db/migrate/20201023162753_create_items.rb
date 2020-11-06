@@ -6,8 +6,8 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.string :measurement
       t.integer :inventory
       t.string :brand
-      t.integer :marketId
-      t.integer :categoryId
+      t.integer :market_id
+      t.integer :category_id
 
       t.timestamps
     end

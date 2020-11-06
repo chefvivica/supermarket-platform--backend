@@ -3,7 +3,7 @@ class CreateMarkets < ActiveRecord::Migration[6.0]
     create_table :markets do |t|
       t.string :name
       t.string :location
-      t.integer :ownerId
+      t.integer :owner_id
 
       t.timestamps
     end
